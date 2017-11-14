@@ -7,21 +7,23 @@ public class BD {
 
 	public static Connection getConexion(){
 	
+		
 		Connection conn = null; 
 		try{
-		Class.forName("org.sqlite.JDBC");
-		String url = " ";
-		String usuario = " ";
-		String pass = " ";
+		Class.forName("com.mysql.jdbc.Driver");
+		String url = "jdbc:mysql://localhost/bd_prueba";
+		String usuario = "ina";
+		String pass = "ina";
 		
 		conn = DriverManager.getConnection(url,usuario,pass);
 		
 		}catch(ClassNotFoundException e){
 			
-			e.printStackTrace();
+			e.printStackTrace();System.out.println("Error al cargar driver");
 			
 		   }catch(SQLException e){
-			 e.printStackTrace();  
+			 
+			   e.printStackTrace();  System.out.println("Error base datos");
 		   }
 		return conn;
 		   }

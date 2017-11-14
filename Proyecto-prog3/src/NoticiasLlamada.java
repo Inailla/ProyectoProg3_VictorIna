@@ -7,10 +7,11 @@ import org.jsoup.select.Elements;
 
 public class NoticiasLlamada {
 
-	public void llamadaEconomia() throws IOException{
+	public ArrayList<String> llamadaEconomia() throws IOException{
 		
 		int j=0;
 		ArrayList<String> Eco = new ArrayList<>();
+		ArrayList<String> titulo = new ArrayList<>();
 		int opcion2=0;
 		String noticiasNew2;
 		String urlEco = "http://www.eleconomista.es/rss/rss-economia.php";
@@ -19,6 +20,7 @@ public class NoticiasLlamada {
 		Elements el3 = d2.select("link");
 		for (org.jsoup.nodes.Element element : el2) {
 			System.out.println(j+") "+element.text()+"\n");
+			titulo.add(element.text());
 			j++;
 		}
 		for (org.jsoup.nodes.Element element : el3) {
@@ -36,6 +38,7 @@ public class NoticiasLlamada {
 				System.out.println(element.text());
 				
 				}
+			return titulo;
 			
 		
 	}

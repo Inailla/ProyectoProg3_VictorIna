@@ -73,7 +73,7 @@ public class Prueba {
 		System.out.println("\n \n \nEliga una de las noticias:");
 		opcion2=Utilidades.leerEntero();
 		noticiasNew2=Eco.get(opcion2);
-		if(opcion>0 && opcion<link.size()){
+		if(opcion2>0 && opcion<link.size()){
 			noticiasNew2=Eco.get(opcion2);
 			Document d3 = Jsoup.connect(noticiasNew2).get();
 			Elements el4 = d3.select("div#cuerpo_noticia");
