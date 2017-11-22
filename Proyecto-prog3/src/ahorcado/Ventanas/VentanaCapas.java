@@ -1,4 +1,4 @@
-package Ventanas;
+package ahorcado.Ventanas;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -7,8 +7,8 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-import Logica.CaracternovalidoException;
-import Logica.Fichero1;
+import ahorcado.Logica.CaracternovalidoException;
+import ahorcado.Logica.Fichero1;
 
 import java.awt.FlowLayout;
 import javax.swing.BoxLayout;
@@ -97,7 +97,7 @@ public class VentanaCapas extends JFrame {
 						String passwordHashMap = usuarios.get(nombreUsuario);
 						if (clave.equals(passwordHashMap)) {
 							JOptionPane.showMessageDialog(VentanaCapas.this, "Bienvenido al juego");
-							Ejemplo Ej= new Ejemplo();
+							VentanaJuego Ej= new VentanaJuego();
 							Ej.frame.setVisible(true);
 						} else {
 							JOptionPane.showMessageDialog(VentanaCapas.this, "Usuario o contraseña incorrectos");

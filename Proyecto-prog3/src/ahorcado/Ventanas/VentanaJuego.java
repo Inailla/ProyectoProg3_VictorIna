@@ -1,4 +1,4 @@
-package Ventanas;
+package ahorcado.Ventanas;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -19,7 +19,7 @@ import javax.swing.JLabel;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeEvent;
 
-public class Ejemplo {
+public class VentanaJuego {
 
 	public JFrame frame;
 	private JTextField textNuevo;
@@ -34,7 +34,7 @@ public class Ejemplo {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Ejemplo window = new Ejemplo();
+					VentanaJuego window = new VentanaJuego();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -46,7 +46,7 @@ public class Ejemplo {
 	/**
 	 * Create the application.
 	 */
-	public Ejemplo() {
+	public VentanaJuego() {
 		initialize();
 	}
 

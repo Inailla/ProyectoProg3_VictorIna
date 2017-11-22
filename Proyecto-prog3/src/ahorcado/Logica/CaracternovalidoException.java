@@ -1,4 +1,4 @@
-package Logica;
+package ahorcado.Logica;
 
 public class CaracternovalidoException extends Exception {
 

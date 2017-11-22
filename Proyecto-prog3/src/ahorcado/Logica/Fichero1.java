@@ -1,4 +1,4 @@
-package Logica;
+package ahorcado.Logica;
 
 import java.io.BufferedReader;
 import java.io.File;
