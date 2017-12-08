@@ -14,7 +14,7 @@ public class Fichero1 {
 
 	public static HashMap<String, String> Gestion() throws NullPointerException, FileSystemNotFoundException {
 
-		File fichero = new File("C:\\archivo.txt");
+		File fichero = new File("archivo.txt");
 		
 		HashMap<String, String> usuariosDelFichero = new HashMap<>();
 		try {

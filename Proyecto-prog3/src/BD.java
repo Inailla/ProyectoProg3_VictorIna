@@ -27,12 +27,6 @@ public class BD {
 		   }
 		return conn;
 		   }
-		
-	
-	
-	
-	
-	
 	
 	
 	
